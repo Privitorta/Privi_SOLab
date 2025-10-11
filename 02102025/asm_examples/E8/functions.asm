@@ -1,6 +1,5 @@
-;------------------------------------------
-; int slen(String message)
-; String length calculation function
+; int slen(string message)
+; string length calculation function
 slen:
     push    ebx
     mov     ebx, eax
@@ -18,8 +17,8 @@ finished:
  
  
 ;------------------------------------------
-; void sprint(String message)
-; String printing function
+; void sprint(string message)
+; string printing function
 sprint:
     push    edx
     push    ecx
@@ -42,8 +41,8 @@ sprint:
  
  
 ;------------------------------------------
-; void sprintLF(String message)
-; String printing with line feed function
+; void sprintLF(string message)
+; string printing with line feed function
 sprintLF:
     call    sprint
  
@@ -59,7 +58,7 @@ sprintLF:
  
 ;------------------------------------------
 ; void exit()
-; Exit program and restore resources
+; exit program and restore resources
 quit:
     mov     ebx, 0
     mov     eax, 1
