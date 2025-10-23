@@ -1,0 +1,2417 @@
+execve("/usr/bin/du", ["du", "/etc"], 0x7ffe63ce9bb8 /* 17 vars */) = 0
+brk(NULL)                               = 0x55deb0464000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=36692, ...}) = 0
+mmap(NULL, 36692, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4264ef2000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260A\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1824496, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4264ef0000
+mmap(NULL, 1837056, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4264d2f000
+mprotect(0x7f4264d51000, 1658880, PROT_NONE) = 0
+mmap(0x7f4264d51000, 1343488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f4264d51000
+mmap(0x7f4264e99000, 311296, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16a000) = 0x7f4264e99000
+mmap(0x7f4264ee6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b6000) = 0x7f4264ee6000
+mmap(0x7f4264eec000, 14336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4264eec000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7f4264ef1540) = 0
+mprotect(0x7f4264ee6000, 16384, PROT_READ) = 0
+mprotect(0x55deafa15000, 4096, PROT_READ) = 0
+mprotect(0x7f4264f22000, 4096, PROT_READ) = 0
+munmap(0x7f4264ef2000, 36692)           = 0
+brk(NULL)                               = 0x55deb0464000
+brk(0x55deb0485000)                     = 0x55deb0485000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en_US.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en_US.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en_US/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/en/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "/etc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(AT_FDCWD, "/etc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 4
+getdents64(3, /* 123 entries */, 32768) = 3872
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(4, "security", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "security", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "security", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 13 entries */, 32768)  = 424
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "namespace.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "namespace.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "namespace.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fstatfs(3, {f_type=OVERLAYFS_SUPER_MAGIC, f_bsize=4096, f_blocks=2386480, f_bfree=1589597, f_bavail=1463441, f_files=610800, f_ffree=514359, f_fsid={val=[263313651, 802997239]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(6)                                = 0
+fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+write(1, "4\t/etc/security/namespace.d\n", 284	/etc/security/namespace.d
+) = 28
+newfstatat(5, "opasswd", {st_mode=S_IFREG|0600, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "limits.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "limits.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "limits.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/security/limits.d\n", 254	/etc/security/limits.d
+) = 25
+newfstatat(5, "time.conf", {st_mode=S_IFREG|0644, st_size=2179, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "access.conf", {st_mode=S_IFREG|0644, st_size=4564, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "namespace.init", {st_mode=S_IFREG|0755, st_size=1016, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "group.conf", {st_mode=S_IFREG|0644, st_size=3635, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pam_env.conf", {st_mode=S_IFREG|0644, st_size=2972, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "limits.conf", {st_mode=S_IFREG|0644, st_size=2161, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "sepermit.conf", {st_mode=S_IFREG|0644, st_size=419, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "namespace.conf", {st_mode=S_IFREG|0644, st_size=1440, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "48\t/etc/security\n", 1748	/etc/security
+)     = 17
+newfstatat(4, "host.conf", {st_mode=S_IFREG|0644, st_size=9, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "shells", {st_mode=S_IFREG|0644, st_size=87, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "rc0.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "rc0.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "rc0.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 3 entries */, 32768)   = 88
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "K01hwclock.sh", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/rc0.d\n", 134	/etc/rc0.d
+)         = 13
+newfstatat(4, "dpkg", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "dpkg", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "dpkg", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 7 entries */, 32768)   = 224
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "dpkg.cfg", {st_mode=S_IFREG|0644, st_size=446, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "dpkg.cfg.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "dpkg.cfg.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "dpkg.cfg.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 4 entries */, 32768)   = 136
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "docker-apt-speedup", {st_mode=S_IFREG|0644, st_size=259, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "pkg-config-hook-config", {st_mode=S_IFREG|0644, st_size=204, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "12\t/etc/dpkg/dpkg.cfg.d\n", 2412	/etc/dpkg/dpkg.cfg.d
+) = 24
+newfstatat(5, "origins", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "origins", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "origins", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 4 entries */, 32768)   = 112
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "debian", {st_mode=S_IFREG|0644, st_size=82, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "default", {st_mode=S_IFLNK|0777, st_size=6, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/dpkg/origins\n", 208	/etc/dpkg/origins
+)  = 20
+newfstatat(5, "shlibs.default", {st_mode=S_IFREG|0644, st_size=260, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "shlibs.override", {st_mode=S_IFREG|0644, st_size=253, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "36\t/etc/dpkg\n", 1336	/etc/dpkg
+)         = 13
+newfstatat(4, "gai.conf", {st_mode=S_IFREG|0644, st_size=2584, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "subuid", {st_mode=S_IFREG|0644, st_size=406, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "hostname", {st_mode=S_IFREG|0644, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "pam.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 20 entries */, 32768)  = 632
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "other", {st_mode=S_IFREG|0644, st_size=520, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "common-password", {st_mode=S_IFREG|0644, st_size=1440, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "runuser-l", {st_mode=S_IFREG|0644, st_size=138, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "common-session", {st_mode=S_IFREG|0644, st_size=1189, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "newusers", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "login", {st_mode=S_IFREG|0644, st_size=4945, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "chfn", {st_mode=S_IFREG|0644, st_size=384, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "passwd", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "su-l", {st_mode=S_IFREG|0644, st_size=137, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "common-auth", {st_mode=S_IFREG|0644, st_size=1221, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "chsh", {st_mode=S_IFREG|0644, st_size=581, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "runuser", {st_mode=S_IFREG|0644, st_size=143, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "su", {st_mode=S_IFREG|0644, st_size=2257, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "chpasswd", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "common-session-noninteractive", {st_mode=S_IFREG|0644, st_size=1154, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "common-account", {st_mode=S_IFREG|0644, st_size=1208, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "sshd", {st_mode=S_IFREG|0644, st_size=2133, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "systemd-user", {st_mode=S_IFREG|0644, st_size=317, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "80\t/etc/pam.d\n", 1480	/etc/pam.d
+)        = 14
+newfstatat(4, "localtime", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "selinux", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "selinux", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "selinux", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 3 entries */, 32768)   = 88
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "semanage.conf", {st_mode=S_IFREG|0644, st_size=2041, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/selinux\n", 158	/etc/selinux
+)       = 15
+newfstatat(4, "update-motd.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "update-motd.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "update-motd.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 3 entries */, 32768)   = 80
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "10-uname", {st_mode=S_IFREG|0755, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/update-motd.d\n", 218	/etc/update-motd.d
+) = 21
+newfstatat(4, "passwd-", {st_mode=S_IFREG|0644, st_size=2096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "logrotate.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "logrotate.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "logrotate.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 5 entries */, 32768)   = 128
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "dpkg", {st_mode=S_IFREG|0644, st_size=112, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "apt", {st_mode=S_IFREG|0644, st_size=173, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "alternatives", {st_mode=S_IFREG|0644, st_size=120, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "16\t/etc/logrotate.d\n", 2016	/etc/logrotate.d
+)  = 20
+newfstatat(4, "bindresvport.blacklist", {st_mode=S_IFREG|0644, st_size=367, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "opt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "opt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "opt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(5)                                = 0
+write(1, "4\t/etc/opt\n", 114	/etc/opt
+)           = 11
+newfstatat(4, "cron.daily", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "cron.daily", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "cron.daily", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 7 entries */, 32768)   = 200
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "dpkg", {st_mode=S_IFREG|0755, st_size=1187, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "passwd", {st_mode=S_IFREG|0755, st_size=249, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "apt-compat", {st_mode=S_IFREG|0755, st_size=1478, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "man-db", {st_mode=S_IFREG|0755, st_size=1123, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "bsdmainutils", {st_mode=S_IFREG|0755, st_size=355, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "24\t/etc/cron.daily\n", 1924	/etc/cron.daily
+)   = 19
+newfstatat(4, "resolv.conf", {st_mode=S_IFREG|0644, st_size=129, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "rc6.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "rc6.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "rc6.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 3 entries */, 32768)   = 88
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "K01hwclock.sh", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/rc6.d\n", 134	/etc/rc6.d
+)         = 13
+newfstatat(4, "passwd", {st_mode=S_IFREG|0644, st_size=2139, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "timezone", {st_mode=S_IFREG|0644, st_size=8, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "securetty", {st_mode=S_IFREG|0644, st_size=4141, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "bash.bashrc", {st_mode=S_IFREG|0644, st_size=1994, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "issue", {st_mode=S_IFREG|0644, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "rcS.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "rcS.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "rcS.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 5 entries */, 32768)   = 160
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "S01hwclock.sh", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "S01x11-common", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "S01procps", {st_mode=S_IFLNK|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/rcS.d\n", 134	/etc/rcS.d
+)         = 13
+newfstatat(4, "rmt", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ld.so.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "ld.so.conf.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "ld.so.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 7 entries */, 32768)   = 280
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "libc.conf", {st_mode=S_IFREG|0644, st_size=44, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "x86_64-linux-gnu.conf", {st_mode=S_IFREG|0644, st_size=100, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "zz_x32-biarch-compat.conf", {st_mode=S_IFREG|0644, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "zz_i386-biarch-compat.conf", {st_mode=S_IFREG|0644, st_size=56, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "fakeroot-x86_64-linux-gnu.conf", {st_mode=S_IFREG|0644, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "24\t/etc/ld.so.conf.d\n", 2124	/etc/ld.so.conf.d
+) = 21
+newfstatat(4, "init.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "init.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "init.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 7 entries */, 32768)   = 192
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "hwclock.sh", {st_mode=S_IFREG|0755, st_size=3809, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "x11-common", {st_mode=S_IFREG|0755, st_size=2757, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "dbus", {st_mode=S_IFREG|0755, st_size=2813, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh", {st_mode=S_IFREG|0755, st_size=3939, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "procps", {st_mode=S_IFREG|0755, st_size=924, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "24\t/etc/init.d\n", 1524	/etc/init.d
+)       = 15
+newfstatat(4, "fstab", {st_mode=S_IFREG|0644, st_size=37, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "iproute2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "iproute2", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "iproute2", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 13 entries */, 32768)  = 400
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "bpf_pinning", {st_mode=S_IFREG|0644, st_size=85, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rt_dsfield", {st_mode=S_IFREG|0644, st_size=331, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rt_protos.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "rt_protos.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "rt_protos.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 3 entries */, 32768)   = 80
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "README", {st_mode=S_IFREG|0644, st_size=144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/iproute2/rt_protos.d\n", 288	/etc/iproute2/rt_protos.d
+) = 28
+newfstatat(5, "rt_tables", {st_mode=S_IFREG|0644, st_size=87, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rt_scopes", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rt_protos", {st_mode=S_IFREG|0644, st_size=201, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rt_tables.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "rt_tables.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "rt_tables.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 3 entries */, 32768)   = 80
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "README", {st_mode=S_IFREG|0644, st_size=144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/iproute2/rt_tables.d\n", 288	/etc/iproute2/rt_tables.d
+) = 28
+newfstatat(5, "rt_realms", {st_mode=S_IFREG|0644, st_size=112, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "group", {st_mode=S_IFREG|0644, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ematch_map", {st_mode=S_IFREG|0644, st_size=81, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "nl_protos", {st_mode=S_IFREG|0644, st_size=262, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "56\t/etc/iproute2\n", 1756	/etc/iproute2
+)     = 17
+newfstatat(4, "adduser.conf", {st_mode=S_IFREG|0644, st_size=2981, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "profile", {st_mode=S_IFREG|0644, st_size=767, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "deluser.conf", {st_mode=S_IFREG|0644, st_size=604, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "libaudit.conf", {st_mode=S_IFREG|0644, st_size=191, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "shadow", {st_mode=S_IFREG|0640, st_size=3331, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "environment", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "debian_version", {st_mode=S_IFREG|0644, st_size=5, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "xattr.conf", {st_mode=S_IFREG|0644, st_size=642, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "mke2fs.conf", {st_mode=S_IFREG|0644, st_size=812, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "subgid", {st_mode=S_IFREG|0644, st_size=406, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "issue.net", {st_mode=S_IFREG|0644, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "rc5.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "rc5.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "rc5.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 4 entries */, 32768)   = 112
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "S01dbus", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "S01ssh", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/rc5.d\n", 134	/etc/rc5.d
+)         = 13
+newfstatat(4, ".pwd.lock", {st_mode=S_IFREG|0600, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "gshadow", {st_mode=S_IFREG|0640, st_size=491, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "default", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "default", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "default", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 8 entries */, 32768)   = 216
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "nss", {st_mode=S_IFREG|0644, st_size=1756, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "hwclock", {st_mode=S_IFREG|0644, st_size=657, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "useradd", {st_mode=S_IFREG|0644, st_size=1118, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "dbus", {st_mode=S_IFREG|0644, st_size=297, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh", {st_mode=S_IFREG|0644, st_size=133, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "bsdmainutils", {st_mode=S_IFREG|0644, st_size=222, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "28\t/etc/default\n", 1628	/etc/default
+)      = 16
+newfstatat(4, "pam.conf", {st_mode=S_IFREG|0644, st_size=552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "ld.so.conf", {st_mode=S_IFREG|0644, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "rc3.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "rc3.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "rc3.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 4 entries */, 32768)   = 112
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "S01dbus", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "S01ssh", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/rc3.d\n", 134	/etc/rc3.d
+)         = 13
+newfstatat(4, "login.defs", {st_mode=S_IFREG|0644, st_size=10477, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "apt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "apt", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "apt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 8 entries */, 32768)   = 264
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "apt.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "apt.conf.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "apt.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 8 entries */, 32768)   = 272
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "70debconf", {st_mode=S_IFREG|0644, st_size=182, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "docker-clean", {st_mode=S_IFREG|0644, st_size=1175, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "docker-gzip-indexes", {st_mode=S_IFREG|0644, st_size=481, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "01autoremove", {st_mode=S_IFREG|0644, st_size=1018, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "docker-autoremove-suggests", {st_mode=S_IFREG|0644, st_size=754, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "docker-no-languages", {st_mode=S_IFREG|0644, st_size=269, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "28\t/etc/apt/apt.conf.d\n", 2328	/etc/apt/apt.conf.d
+) = 23
+newfstatat(5, "preferences.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "preferences.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "preferences.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/apt/preferences.d\n", 254	/etc/apt/preferences.d
+) = 25
+newfstatat(5, "sources.list.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "sources.list.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "sources.list.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/apt/sources.list.d\n", 264	/etc/apt/sources.list.d
+) = 26
+newfstatat(5, "auth.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "auth.conf.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "auth.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/apt/auth.conf.d\n", 234	/etc/apt/auth.conf.d
+) = 23
+newfstatat(5, "sources.list", {st_mode=S_IFREG|0644, st_size=56, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "trusted.gpg.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "trusted.gpg.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "trusted.gpg.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 11 entries */, 32768)  = 584
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "debian-archive-buster-stable.gpg", {st_mode=S_IFREG|0644, st_size=2332, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-buster-automatic.gpg", {st_mode=S_IFREG|0644, st_size=8132, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-jessie-stable.gpg", {st_mode=S_IFREG|0644, st_size=2763, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-jessie-security-automatic.gpg", {st_mode=S_IFREG|0644, st_size=5115, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-buster-security-automatic.gpg", {st_mode=S_IFREG|0644, st_size=8141, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-stretch-automatic.gpg", {st_mode=S_IFREG|0644, st_size=7443, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-stretch-stable.gpg", {st_mode=S_IFREG|0644, st_size=2263, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-stretch-security-automatic.gpg", {st_mode=S_IFREG|0644, st_size=7452, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "debian-archive-jessie-automatic.gpg", {st_mode=S_IFREG|0644, st_size=5106, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "64\t/etc/apt/trusted.gpg.d\n", 2664	/etc/apt/trusted.gpg.d
+) = 26
+close(5)                                = 0
+write(1, "112\t/etc/apt\n", 13112	/etc/apt
+)         = 13
+newfstatat(4, "ld.so.cache", {st_mode=S_IFREG|0644, st_size=36692, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "skel", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "skel", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "skel", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 10 entries */, 32768)  = 296
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, ".profile", {st_mode=S_IFREG|0644, st_size=807, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".bash_logout", {st_mode=S_IFREG|0644, st_size=220, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".bashrc", {st_mode=S_IFREG|0644, st_size=3720, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".ssh", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, ".ssh", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, ".ssh", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 3 entries */, 32768)   = 88
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "authorized_keys", {st_mode=S_IFREG|0644, st_size=1206, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/skel/.ssh\n", 178	/etc/skel/.ssh
+)     = 17
+newfstatat(5, ".tmux.conf", {st_mode=S_IFREG|0644, st_size=54, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".gitconfig", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, ".gdbinit", {st_mode=S_IFREG|0644, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "solab-jos", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "solab-jos", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "solab-jos", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(3, /* 26 entries */, 32768)  = 776
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(6, "inc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, "inc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, "inc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(3, /* 19 entries */, 32768)  = 592
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(7, "memlayout.h", {st_mode=S_IFREG|0644, st_size=8035, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "error.h", {st_mode=S_IFREG|0644, st_size=572, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "x86.h", {st_mode=S_IFREG|0644, st_size=4535, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "stab.h", {st_mode=S_IFREG|0644, st_size=1915, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "elf.h", {st_mode=S_IFREG|0644, st_size=1240, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "types.h", {st_mode=S_IFREG|0644, st_size=2000, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "COPYRIGHT", {st_mode=S_IFREG|0644, st_size=7841, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "stdarg.h", {st_mode=S_IFREG|0644, st_size=335, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "stdio.h", {st_mode=S_IFREG|0644, st_size=831, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "kbdreg.h", {st_mode=S_IFREG|0644, st_size=3337, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "assert.h", {st_mode=S_IFREG|0644, st_size=607, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "string.h", {st_mode=S_IFREG|0644, st_size=874, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "mmu.h", {st_mode=S_IFREG|0644, st_size=11307, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "lib.h", {st_mode=S_IFREG|0644, st_size=1526, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "syscall.h", {st_mode=S_IFREG|0644, st_size=194, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "env.h", {st_mode=S_IFREG|0644, st_size=1732, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "trap.h", {st_mode=S_IFREG|0644, st_size=2295, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(7)                                = 0
+write(1, "92\t/etc/skel/solab-jos/inc\n", 2792	/etc/skel/solab-jos/inc
+) = 27
+newfstatat(6, "user", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, "user", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, "user", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(3, /* 18 entries */, 32768)  = 584
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(7, "sendpage.c", {st_mode=S_IFREG|0644, st_size=1109, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "testbss.c", {st_mode=S_IFREG|0644, st_size=615, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "Makefrag", {st_mode=S_IFREG|0644, st_size=481, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "evilhello.c", {st_mode=S_IFREG|0644, st_size=272, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "breakpoint.c", {st_mode=S_IFREG|0644, st_size=125, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "buggyhello.c", {st_mode=S_IFREG|0644, st_size=199, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "faultread.c", {st_mode=S_IFREG|0644, st_size=178, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "user.ld", {st_mode=S_IFREG|0644, st_size=1623, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "badsegment.c", {st_mode=S_IFREG|0644, st_size=224, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "faultwritekernel.c", {st_mode=S_IFREG|0644, st_size=151, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "faultwrite.c", {st_mode=S_IFREG|0644, st_size=138, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "divzero.c", {st_mode=S_IFREG|0644, st_size=173, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "buggyhello2.c", {st_mode=S_IFREG|0644, st_size=258, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "softint.c", {st_mode=S_IFREG|0644, st_size=158, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "faultreadkernel.c", {st_mode=S_IFREG|0644, st_size=195, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "hello.c", {st_mode=S_IFREG|0644, st_size=158, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(7)                                = 0
+write(1, "68\t/etc/skel/solab-jos/user\n", 2868	/etc/skel/solab-jos/user
+) = 28
+newfstatat(6, "conf", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, "conf", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, "conf", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(3, /* 4 entries */, 32768)   = 112
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(7, "lab.mk", {st_mode=S_IFREG|0644, st_size=47, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "env.mk", {st_mode=S_IFREG|0644, st_size=716, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(7)                                = 0
+write(1, "12\t/etc/skel/solab-jos/conf\n", 2812	/etc/skel/solab-jos/conf
+) = 28
+newfstatat(6, "mergedep.pl", {st_mode=S_IFREG|0644, st_size=2331, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, ".dir-locals.el", {st_mode=S_IFREG|0644, st_size=214, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, ".gdbinit.tmpl", {st_mode=S_IFREG|0644, st_size=857, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GNUmakefile", {st_mode=S_IFREG|0644, st_size=9712, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "CODING", {st_mode=S_IFREG|0644, st_size=1212, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "grade-lab1", {st_mode=S_IFREG|0755, st_size=1354, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, ".git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, ".git", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, ".git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(3, /* 13 entries */, 32768)  = 368
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(7, "info", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(7, "info", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(7, "info", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 8
+getdents64(3, /* 3 entries */, 32768)   = 80
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(8, "exclude", {st_mode=S_IFREG|0644, st_size=240, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(8)                                = 0
+write(1, "8\t/etc/skel/solab-jos/.git/info\n", 328	/etc/skel/solab-jos/.git/info
+) = 32
+newfstatat(7, "refs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(7, "refs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(7, "refs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 8
+getdents64(3, /* 5 entries */, 32768)   = 136
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(8, "heads", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(8, "heads", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(8, "heads", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 9
+close(4)                                = 0
+getdents64(3, /* 3 entries */, 32768)   = 72
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(9, "lab1", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(9)                                = 0
+write(1, "8\t/etc/skel/solab-jos/.git/refs/"..., 388	/etc/skel/solab-jos/.git/refs/heads
+) = 38
+newfstatat(8, "remotes", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(8, "remotes", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(8, "remotes", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 4
+getdents64(3, /* 3 entries */, 32768)   = 80
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(4, "origin", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "origin", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "origin", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 9
+close(5)                                = 0
+getdents64(3, /* 3 entries */, 32768)   = 72
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(9, "HEAD", {st_mode=S_IFREG|0644, st_size=30, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(9)                                = 0
+write(1, "8\t/etc/skel/solab-jos/.git/refs/"..., 478	/etc/skel/solab-jos/.git/refs/remotes/origin
+) = 47
+close(4)                                = 0
+write(1, "12\t/etc/skel/solab-jos/.git/refs"..., 4112	/etc/skel/solab-jos/.git/refs/remotes
+) = 41
+newfstatat(8, "tags", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(8, "tags", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(8, "tags", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 4
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(4)                                = 0
+write(1, "4\t/etc/skel/solab-jos/.git/refs/"..., 374	/etc/skel/solab-jos/.git/refs/tags
+) = 37
+close(8)                                = 0
+write(1, "28\t/etc/skel/solab-jos/.git/refs"..., 3328	/etc/skel/solab-jos/.git/refs
+) = 33
+newfstatat(7, "hooks", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(7, "hooks", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(7, "hooks", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 4
+getdents64(3, /* 14 entries */, 32768)  = 568
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(4, "commit-msg.sample", {st_mode=S_IFREG|0755, st_size=896, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "update.sample", {st_mode=S_IFREG|0755, st_size=3635, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pre-merge-commit.sample", {st_mode=S_IFREG|0755, st_size=416, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "prepare-commit-msg.sample", {st_mode=S_IFREG|0755, st_size=1492, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pre-push.sample", {st_mode=S_IFREG|0755, st_size=1348, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "fsmonitor-watchman.sample", {st_mode=S_IFREG|0755, st_size=4655, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pre-applypatch.sample", {st_mode=S_IFREG|0755, st_size=424, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pre-rebase.sample", {st_mode=S_IFREG|0755, st_size=4898, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "post-update.sample", {st_mode=S_IFREG|0755, st_size=189, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pre-receive.sample", {st_mode=S_IFREG|0755, st_size=544, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "pre-commit.sample", {st_mode=S_IFREG|0755, st_size=1643, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(4, "applypatch-msg.sample", {st_mode=S_IFREG|0755, st_size=478, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(4)                                = 0
+write(1, "60\t/etc/skel/solab-jos/.git/hook"..., 3460	/etc/skel/solab-jos/.git/hooks
+) = 34
+newfstatat(7, "HEAD", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "branches", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(7, "branches", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(7, "branches", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 4
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(4)                                = 0
+write(1, "4\t/etc/skel/solab-jos/.git/branc"..., 364	/etc/skel/solab-jos/.git/branches
+) = 36
+newfstatat(7, "logs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(7, "logs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(7, "logs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 4
+getdents64(3, /* 4 entries */, 32768)   = 96
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(4, "refs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "refs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "refs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 4 entries */, 32768)   = 112
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "heads", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "heads", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "heads", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 8
+getdents64(3, /* 3 entries */, 32768)   = 72
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(8, "lab1", {st_mode=S_IFREG|0644, st_size=183, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(8)                                = 0
+write(1, "8\t/etc/skel/solab-jos/.git/logs/"..., 438	/etc/skel/solab-jos/.git/logs/refs/heads
+) = 43
+newfstatat(5, "remotes", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "remotes", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "remotes", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 8
+getdents64(3, /* 3 entries */, 32768)   = 80
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(8, "origin", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(8, "origin", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(8, "origin", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 9
+close(6)                                = 0
+getdents64(3, /* 3 entries */, 32768)   = 72
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(9, "HEAD", {st_mode=S_IFREG|0644, st_size=183, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(9)                                = 0
+write(1, "8\t/etc/skel/solab-jos/.git/logs/"..., 528	/etc/skel/solab-jos/.git/logs/refs/remotes/origin
+) = 52
+close(8)                                = 0
+write(1, "12\t/etc/skel/solab-jos/.git/logs"..., 4612	/etc/skel/solab-jos/.git/logs/refs/remotes
+) = 46
+close(5)                                = 0
+write(1, "24\t/etc/skel/solab-jos/.git/logs"..., 3824	/etc/skel/solab-jos/.git/logs/refs
+) = 38
+newfstatat(4, "HEAD", {st_mode=S_IFREG|0644, st_size=356, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(4)                                = 0
+write(1, "32\t/etc/skel/solab-jos/.git/logs"..., 3332	/etc/skel/solab-jos/.git/logs
+) = 33
+newfstatat(7, "config", {st_mode=S_IFREG|0644, st_size=255, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "index", {st_mode=S_IFREG|0644, st_size=7581, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "description", {st_mode=S_IFREG|0644, st_size=73, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "packed-refs", {st_mode=S_IFREG|0644, st_size=3220, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "objects", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(7, "objects", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(7, "objects", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 4
+getdents64(3, /* 4 entries */, 32768)   = 96
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(4, "pack", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "pack", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "pack", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 4 entries */, 32768)   = 192
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+newfstatat(5, "pack-3d4d17a71c2e4f6c36ff72afe495a34f6b2f07c6.pack", {st_mode=S_IFREG|0444, st_size=759434, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pack-3d4d17a71c2e4f6c36ff72afe495a34f6b2f07c6.idx", {st_mode=S_IFREG|0444, st_size=32180, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "780\t/etc/skel/solab-jos/.git/obj"..., 42780	/etc/skel/solab-jos/.git/objects/pack
+) = 42
+newfstatat(4, "info", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(4, "info", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(3, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(4, "info", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(3, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(3, /* 2 entries */, 32768)   = 48
+getdents64(3, /* 0 entries */, 32768)   = 0
+close(3)                                = 0
+close(5)                                = 0
+write(1, "4\t/etc/skel/solab-jos/.git/objec"..., 404	/etc/skel/solab-jos/.git/objects/info
+) = 40
+close(4)                                = 0
+write(1, "788\t/etc/skel/solab-jos/.git/obj"..., 37788	/etc/skel/solab-jos/.git/objects
+) = 37
+openat(7, "..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(7)                                = 0
+write(1, "948\t/etc/skel/solab-jos/.git\n", 29948	/etc/skel/solab-jos/.git
+) = 29
+newfstatat(3, "kern", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "kern", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "kern", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 26 entries */, 32768)  = 816
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "Makefrag", {st_mode=S_IFREG|0644, st_size=2995, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "console.h", {st_mode=S_IFREG|0644, st_size=526, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "printf.c", {st_mode=S_IFREG|0644, st_size=517, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "monitor.c", {st_mode=S_IFREG|0644, st_size=3648, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "init.c", {st_mode=S_IFREG|0644, st_size=2025, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "kernel.ld", {st_mode=S_IFREG|0644, st_size=1284, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "console.c", {st_mode=S_IFREG|0644, st_size=10245, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "entrypgdir.c", {st_mode=S_IFREG|0644, st_size=29017, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "monitor.h", {st_mode=S_IFREG|0644, st_size=591, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "COPYRIGHT", {st_mode=S_IFREG|0644, st_size=7893, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "kdebug.h", {st_mode=S_IFREG|0644, st_size=596, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "kdebug.c", {st_mode=S_IFREG|0644, st_size=6999, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "entry.S", {st_mode=S_IFREG|0644, st_size=2825, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pmap.c", {st_mode=S_IFREG|0644, st_size=31322, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "env.c", {st_mode=S_IFREG|0644, st_size=15974, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "syscall.c", {st_mode=S_IFREG|0644, st_size=2349, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "syscall.h", {st_mode=S_IFREG|0644, st_size=313, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "kclock.c", {st_mode=S_IFREG|0644, st_size=343, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "kclock.h", {st_mode=S_IFREG|0644, st_size=1095, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "trapentry.S", {st_mode=S_IFREG|0644, st_size=2724, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pmap.h", {st_mode=S_IFREG|0644, st_size=2377, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "env.h", {st_mode=S_IFREG|0644, st_size=1127, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "trap.h", {st_mode=S_IFREG|0644, st_size=599, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "trap.c", {st_mode=S_IFREG|0644, st_size=7912, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "188\t/etc/skel/solab-jos/kern\n", 29188	/etc/skel/solab-jos/kern
+) = 29
+newfstatat(3, "lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "lib", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 13 entries */, 32768)  = 400
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "readline.c", {st_mode=S_IFREG|0644, st_size=627, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "string.c", {st_mode=S_IFREG|0644, st_size=4828, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "printfmt.c", {st_mode=S_IFREG|0644, st_size=6079, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "Makefrag", {st_mode=S_IFREG|0644, st_size=714, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "exit.c", {st_mode=S_IFREG|0644, st_size=65, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "printf.c", {st_mode=S_IFREG|0644, st_size=1242, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "syscall.c", {st_mode=S_IFREG|0644, st_size=1264, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "libmain.c", {st_mode=S_IFREG|0644, st_size=627, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "console.c", {st_mode=S_IFREG|0644, st_size=339, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "panic.c", {st_mode=S_IFREG|0644, st_size=526, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "entry.S", {st_mode=S_IFREG|0644, st_size=816, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "56\t/etc/skel/solab-jos/lib\n", 2756	/etc/skel/solab-jos/lib
+) = 27
+newfstatat(3, "boot", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "boot", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "boot", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 6 entries */, 32768)   = 176
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "Makefrag", {st_mode=S_IFREG|0644, st_size=848, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "sign.pl", {st_mode=S_IFREG|0644, st_size=400, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "main.c", {st_mode=S_IFREG|0644, st_size=3300, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "boot.S", {st_mode=S_IFREG|0644, st_size=2848, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "20\t/etc/skel/solab-jos/boot\n", 2820	/etc/skel/solab-jos/boot
+) = 28
+newfstatat(3, ".gitignore", {st_mode=S_IFREG|0644, st_size=180, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "gradelib.py", {st_mode=S_IFREG|0644, st_size=16942, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "fs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "fs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "fs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 120
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "test.c", {st_mode=S_IFREG|0644, st_size=1835, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "testshell.key", {st_mode=S_IFREG|0644, st_size=2916, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "12\t/etc/skel/solab-jos/fs\n", 2612	/etc/skel/solab-jos/fs
+) = 26
+newfstatat(3, ".gitlab-ci.yml", {st_mode=S_IFREG|0644, st_size=869, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "grade-lab3", {st_mode=S_IFREG|0755, st_size=4213, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, ".gitmodules", {st_mode=S_IFREG|0644, st_size=101, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "mk-qemu-mit.sh", {st_mode=S_IFREG|0755, st_size=249, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "README.md", {st_mode=S_IFREG|0644, st_size=804, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "grade-lab2", {st_mode=S_IFREG|0755, st_size=706, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "qemu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "qemu", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "qemu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(5)                                = 0
+write(1, "4\t/etc/skel/solab-jos/qemu\n", 274	/etc/skel/solab-jos/qemu
+) = 27
+newfstatat(3, "coverage.sh", {st_mode=S_IFREG|0755, st_size=200, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(3)                                = 0
+write(1, "1492\t/etc/skel/solab-jos\n", 251492	/etc/skel/solab-jos
+) = 25
+openat(4, "..", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+close(4)                                = 0
+write(1, "1528\t/etc/skel\n", 151528	/etc/skel
+)       = 15
+newfstatat(3, "terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "terminfo", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "README", {st_mode=S_IFREG|0644, st_size=212, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/terminfo\n", 168	/etc/terminfo
+)      = 16
+newfstatat(3, "group", {st_mode=S_IFREG|0644, st_size=585, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "profile.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "profile.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "profile.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(5)                                = 0
+write(1, "4\t/etc/profile.d\n", 174	/etc/profile.d
+)     = 17
+newfstatat(3, "rc4.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "rc4.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "rc4.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 112
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "S01dbus", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "S01ssh", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/rc4.d\n", 134	/etc/rc4.d
+)         = 13
+newfstatat(3, "machine-id", {st_mode=S_IFREG|0644, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "rc2.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "rc2.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "rc2.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 112
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "S01dbus", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "S01ssh", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/rc2.d\n", 134	/etc/rc2.d
+)         = 13
+newfstatat(3, "shadow-", {st_mode=S_IFREG|0640, st_size=1203, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "motd", {st_mode=S_IFREG|0644, st_size=286, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "os-release", {st_mode=S_IFLNK|0777, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "kernel", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "kernel", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "kernel", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 112
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "postinst.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "postinst.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "postinst.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "apt-auto-removal", {st_mode=S_IFREG|0755, st_size=2903, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/kernel/postinst.d\n", 258	/etc/kernel/postinst.d
+) = 25
+newfstatat(5, "install.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "install.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "install.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/kernel/install.d\n", 244	/etc/kernel/install.d
+) = 24
+close(5)                                = 0
+write(1, "16\t/etc/kernel\n", 1516	/etc/kernel
+)       = 15
+newfstatat(3, "group-", {st_mode=S_IFREG|0644, st_size=568, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "systemd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "systemd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "systemd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 13 entries */, 32768)  = 424
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "system", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "system", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "system", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 8 entries */, 32768)   = 312
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "timers.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, "timers.target.wants", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, "timers.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(4, /* 5 entries */, 32768)   = 168
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(7, "apt-daily-upgrade.timer", {st_mode=S_IFLNK|0777, st_size=43, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "apt-daily.timer", {st_mode=S_IFLNK|0777, st_size=35, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "man-db.timer", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(7)                                = 0
+write(1, "4\t/etc/systemd/system/timers.tar"..., 424	/etc/systemd/system/timers.target.wants
+) = 42
+newfstatat(6, "dbus-org.freedesktop.timesync1.service", {st_mode=S_IFLNK|0777, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "sshd.service", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "multi-user.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, "multi-user.target.wants", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, "multi-user.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(4, /* 4 entries */, 32768)   = 120
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(7, "remote-fs.target", {st_mode=S_IFLNK|0777, st_size=36, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(7, "ssh.service", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(7)                                = 0
+write(1, "4\t/etc/systemd/system/multi-user"..., 464	/etc/systemd/system/multi-user.target.wants
+) = 46
+newfstatat(6, "getty.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, "getty.target.wants", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, "getty.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(7, "getty@tty1.service", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(7)                                = 0
+write(1, "4\t/etc/systemd/system/getty.targ"..., 414	/etc/systemd/system/getty.target.wants
+) = 41
+newfstatat(6, "sysinit.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(6, "sysinit.target.wants", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(6, "sysinit.target.wants", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 7
+getdents64(4, /* 3 entries */, 32768)   = 96
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(7, "systemd-timesyncd.service", {st_mode=S_IFLNK|0777, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(7)                                = 0
+write(1, "4\t/etc/systemd/system/sysinit.ta"..., 434	/etc/systemd/system/sysinit.target.wants
+) = 43
+close(6)                                = 0
+write(1, "20\t/etc/systemd/system\n", 2320	/etc/systemd/system
+) = 23
+newfstatat(5, "networkd.conf", {st_mode=S_IFREG|0644, st_size=529, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "network", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "network", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "network", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/systemd/network\n", 234	/etc/systemd/network
+) = 23
+newfstatat(5, "user", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "user", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "user", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/systemd/user\n", 204	/etc/systemd/user
+)  = 20
+newfstatat(5, "user.conf", {st_mode=S_IFREG|0644, st_size=1130, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "resolved.conf", {st_mode=S_IFREG|0644, st_size=649, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "logind.conf", {st_mode=S_IFREG|0644, st_size=1042, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "timesyncd.conf", {st_mode=S_IFREG|0644, st_size=677, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "sleep.conf", {st_mode=S_IFREG|0644, st_size=790, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "journald.conf", {st_mode=S_IFREG|0644, st_size=1042, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "system.conf", {st_mode=S_IFREG|0644, st_size=1628, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "64\t/etc/systemd\n", 1664	/etc/systemd
+)      = 16
+newfstatat(3, "debconf.conf", {st_mode=S_IFREG|0644, st_size=2969, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "rc1.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "rc1.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "rc1.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(5)                                = 0
+write(1, "4\t/etc/rc1.d\n", 134	/etc/rc1.d
+)         = 13
+newfstatat(3, "alternatives", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "alternatives", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "alternatives", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 99 entries */, 32768)  = 3088
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "nawk", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "builtins.7.gz", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "awk", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "awk.1.gz", {st_mode=S_IFLNK|0777, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rmt.8.gz", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rmt", {st_mode=S_IFLNK|0777, st_size=17, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pager", {st_mode=S_IFLNK|0777, st_size=9, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "nawk.1.gz", {st_mode=S_IFLNK|0777, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pager.1.gz", {st_mode=S_IFLNK|0777, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "README", {st_mode=S_IFREG|0644, st_size=100, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.1.gz", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.ja.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.ja.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "c89.1.gz", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.de.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.de.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "fakeroot.sv.1.gz", {st_mode=S_IFLNK|0777, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.da.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzma.1.gz", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.pl.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "c99", {st_mode=S_IFLNK|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzmore.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "w.1.gz", {st_mode=S_IFLNK|0777, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.ja.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rvim", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.it.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.ru.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.ru.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "editor", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzcat.1.gz", {st_mode=S_IFLNK|0777, st_size=30, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "fakeroot.fr.1.gz", {st_mode=S_IFLNK|0777, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzcmp", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.fr.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "cc", {st_mode=S_IFLNK|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "w", {st_mode=S_IFLNK|0777, st_size=17, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "faked.fr.1.gz", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "cpp", {st_mode=S_IFLNK|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.1.gz", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.it.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "fakeroot.1.gz", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "fakeroot", {st_mode=S_IFLNK|0777, st_size=22, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "faked.sv.1.gz", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rlogin.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzfgrep.1.gz", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzfgrep", {st_mode=S_IFLNK|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.pl.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzdiff.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzcat", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzgrep.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "automake.1.gz", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rlogin", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.1.gz", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rcp.1.gz", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "write.1.gz", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rsh", {st_mode=S_IFLNK|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.it.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.fr.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pinentry.1.gz", {st_mode=S_IFLNK|0777, st_size=40, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "from.1.gz", {st_mode=S_IFLNK|0777, st_size=33, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "c89", {st_mode=S_IFLNK|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzcmp.1.gz", {st_mode=S_IFLNK|0777, st_size=30, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "aclocal", {st_mode=S_IFLNK|0777, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzdiff", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.fr.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzless", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "fakeroot.es.1.gz", {st_mode=S_IFLNK|0777, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "automake", {st_mode=S_IFLNK|0777, st_size=22, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "c++", {st_mode=S_IFLNK|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzegrep", {st_mode=S_IFLNK|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzmore", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "pinentry", {st_mode=S_IFLNK|0777, st_size=24, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "unlzma.1.gz", {st_mode=S_IFLNK|0777, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.pl.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "view.da.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex.ru.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ex", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "unlzma", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "write", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "c99.1.gz", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzgrep", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rview", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rcp", {st_mode=S_IFLNK|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "rsh.1.gz", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.da.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "faked.1.gz", {st_mode=S_IFLNK|0777, st_size=35, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzegrep.1.gz", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "aclocal.1.gz", {st_mode=S_IFLNK|0777, st_size=37, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vi.de.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzless.1.gz", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vimdiff", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "vim", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "from", {st_mode=S_IFLNK|0777, st_size=17, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "faked.es.1.gz", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "lzma", {st_mode=S_IFLNK|0777, st_size=11, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "editor.1.gz", {st_mode=S_IFLNK|0777, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/alternatives\n", 208	/etc/alternatives
+)  = 20
+newfstatat(3, "hosts", {st_mode=S_IFREG|0644, st_size=174, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "mtab", {st_mode=S_IFLNK|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "subuid-", {st_mode=S_IFREG|0644, st_size=385, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "subgid-", {st_mode=S_IFREG|0644, st_size=385, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "gshadow-", {st_mode=S_IFREG|0640, st_size=478, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "ssh", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "ssh", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "ssh", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 11 entries */, 32768)  = 400
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "ssh_host_ed25519_key.pub", {st_mode=S_IFREG|0644, st_size=99, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh_host_ecdsa_key", {st_mode=S_IFREG|0600, st_size=513, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh_host_ecdsa_key.pub", {st_mode=S_IFREG|0644, st_size=179, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh_host_ed25519_key", {st_mode=S_IFREG|0600, st_size=411, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "sshd_config", {st_mode=S_IFREG|0644, st_size=3288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh_config", {st_mode=S_IFREG|0644, st_size=1580, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh_host_rsa_key.pub", {st_mode=S_IFREG|0644, st_size=399, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "moduli", {st_mode=S_IFREG|0644, st_size=565189, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "ssh_host_rsa_key", {st_mode=S_IFREG|0600, st_size=1823, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "588\t/etc/ssh\n", 13588	/etc/ssh
+)         = 13
+newfstatat(3, "protocols", {st_mode=S_IFREG|0644, st_size=2932, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "ca-certificates", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "ca-certificates", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "ca-certificates", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "update.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "update.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "update.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/ca-certificates/update.d\n", 324	/etc/ca-certificates/update.d
+) = 32
+close(5)                                = 0
+write(1, "8\t/etc/ca-certificates\n", 238	/etc/ca-certificates
+) = 23
+newfstatat(3, "manpath.config", {st_mode=S_IFREG|0644, st_size=5174, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "python", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "python", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "python", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "debian_config", {st_mode=S_IFREG|0644, st_size=94, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/python\n", 148	/etc/python
+)        = 14
+newfstatat(3, "python3", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "python3", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "python3", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "debian_config", {st_mode=S_IFREG|0644, st_size=94, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/python3\n", 158	/etc/python3
+)       = 15
+newfstatat(3, "ldap", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "ldap", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "ldap", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "ldap.conf", {st_mode=S_IFREG|0644, st_size=332, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/ldap\n", 128	/etc/ldap
+)          = 12
+newfstatat(3, "perl", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "perl", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "perl", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 96
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "CPAN", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "CPAN", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "CPAN", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/perl/CPAN\n", 174	/etc/perl/CPAN
+)     = 17
+newfstatat(5, "Net", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "Net", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "Net", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "libnet.cfg", {st_mode=S_IFREG|0644, st_size=611, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/perl/Net\n", 168	/etc/perl/Net
+)      = 16
+close(5)                                = 0
+write(1, "16\t/etc/perl\n", 1316	/etc/perl
+)         = 13
+newfstatat(3, "xdg", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "xdg", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "xdg", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 6 entries */, 32768)   = 192
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "user-dirs.defaults", {st_mode=S_IFREG|0644, st_size=418, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "user-dirs.conf", {st_mode=S_IFREG|0644, st_size=414, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "systemd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "systemd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "systemd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 72
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "user", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "4\t/etc/xdg/systemd\n", 194	/etc/xdg/systemd
+)   = 19
+newfstatat(5, "autostart", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "autostart", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "autostart", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 96
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "xdg-user-dirs.desktop", {st_mode=S_IFREG|0644, st_size=212, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/xdg/autostart\n", 218	/etc/xdg/autostart
+) = 21
+close(5)                                = 0
+write(1, "24\t/etc/xdg\n", 1224	/etc/xdg
+)          = 12
+newfstatat(3, "cron.weekly", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "cron.weekly", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "cron.weekly", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "man-db", {st_mode=S_IFREG|0755, st_size=813, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/cron.weekly\n", 198	/etc/cron.weekly
+)   = 19
+newfstatat(3, "calendar", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "calendar", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "calendar", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "default", {st_mode=S_IFREG|0644, st_size=612, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/calendar\n", 168	/etc/calendar
+)      = 16
+newfstatat(3, "gss", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "gss", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "gss", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "mech.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "mech.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "mech.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/gss/mech.d\n", 184	/etc/gss/mech.d
+)    = 18
+close(5)                                = 0
+write(1, "8\t/etc/gss\n", 118	/etc/gss
+)           = 11
+newfstatat(3, "gdb", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "gdb", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "gdb", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "gdbinit", {st_mode=S_IFREG|0644, st_size=39, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/gdb\n", 118	/etc/gdb
+)           = 11
+newfstatat(3, "magic", {st_mode=S_IFREG|0644, st_size=111, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "hosts.allow", {st_mode=S_IFREG|0644, st_size=411, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "sysctl.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "sysctl.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "sysctl.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 5 entries */, 32768)   = 168
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "protect-links.conf", {st_mode=S_IFREG|0644, st_size=324, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "99-sysctl.conf", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "README.sysctl", {st_mode=S_IFREG|0644, st_size=639, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "12\t/etc/sysctl.d\n", 1712	/etc/sysctl.d
+)     = 17
+newfstatat(3, "binfmt.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "binfmt.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "binfmt.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(5)                                = 0
+write(1, "4\t/etc/binfmt.d\n", 164	/etc/binfmt.d
+)      = 16
+newfstatat(3, "sensors.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "sensors.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "sensors.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, ".placeholder", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/sensors.d\n", 174	/etc/sensors.d
+)     = 17
+newfstatat(3, "services", {st_mode=S_IFREG|0644, st_size=18774, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "networks", {st_mode=S_IFREG|0644, st_size=60, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "mailcap", {st_mode=S_IFREG|0644, st_size=3397, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "glvnd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "glvnd", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "glvnd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "egl_vendor.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "egl_vendor.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "egl_vendor.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/glvnd/egl_vendor.d\n", 264	/etc/glvnd/egl_vendor.d
+) = 26
+close(5)                                = 0
+write(1, "8\t/etc/glvnd\n", 138	/etc/glvnd
+)         = 13
+newfstatat(3, "apparmor.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "apparmor.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "apparmor.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 112
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "usr.bin.man", {st_mode=S_IFREG|0644, st_size=3129, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "local", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "local", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "local", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "usr.bin.man", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "4\t/etc/apparmor.d/local\n", 244	/etc/apparmor.d/local
+) = 24
+close(5)                                = 0
+write(1, "12\t/etc/apparmor.d\n", 1912	/etc/apparmor.d
+)   = 19
+newfstatat(3, "ufw", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "ufw", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "ufw", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "applications.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "applications.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "applications.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "openssh-server", {st_mode=S_IFREG|0644, st_size=145, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/ufw/applications.d\n", 268	/etc/ufw/applications.d
+) = 26
+close(5)                                = 0
+write(1, "12\t/etc/ufw\n", 1212	/etc/ufw
+)          = 12
+newfstatat(3, "magic.mime", {st_mode=S_IFREG|0644, st_size=111, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "groff", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "groff", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "groff", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 112
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "man.local", {st_mode=S_IFREG|0644, st_size=1048, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "mdoc.local", {st_mode=S_IFREG|0644, st_size=1042, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "12\t/etc/groff\n", 1412	/etc/groff
+)        = 14
+newfstatat(3, "emacs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "emacs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "emacs", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "site-start.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "site-start.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "site-start.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "50autoconf.el", {st_mode=S_IFREG|0644, st_size=729, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/emacs/site-start.d\n", 268	/etc/emacs/site-start.d
+) = 26
+close(5)                                = 0
+write(1, "12\t/etc/emacs\n", 1412	/etc/emacs
+)        = 14
+newfstatat(3, "ssl", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "ssl", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "ssl", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 5 entries */, 32768)   = 144
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "certs", {st_mode=S_IFDIR|0755, st_size=16384, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "certs", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "certs", {st_mode=S_IFDIR|0755, st_size=16384, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 277 entries */, 32768) = 11912
+brk(0x55deb04a6000)                     = 0x55deb04a6000
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "40193066.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Actalis_Authentication_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "e18bfb83.0", {st_mode=S_IFLNK|0777, st_size=25, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "OISTE_WISeKey_Global_Root_GA_CA.pem", {st_mode=S_IFLNK|0777, st_size=70, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "2c543cd1.0", {st_mode=S_IFLNK|0777, st_size=22, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "9c8dfbd4.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GTS_Root_R1.pem", {st_mode=S_IFLNK|0777, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Security_Communication_RootCA2.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Trustis_FPS_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "TrustCor_ECA-1.pem", {st_mode=S_IFLNK|0777, st_size=53, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GTS_Root_R3.pem", {st_mode=S_IFLNK|0777, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GDCA_TrustAUTH_R5_ROOT.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Amazon_Root_CA_2.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Certigna_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "76cb8f92.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "XRamp_Global_CA_Root.pem", {st_mode=S_IFLNK|0777, st_size=59, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ca6e4ad9.0", {st_mode=S_IFLNK|0777, st_size=37, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "def36a68.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "0f5dc4f3.0", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "e36a6752.0", {st_mode=S_IFLNK|0777, st_size=25, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "b1159c4c.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "IdenTrust_Commercial_Root_CA_1.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "7aaf71c0.0", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "930ac5d2.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "cd8c0d63.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "b204d74a.0", {st_mode=S_IFLNK|0777, st_size=64, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "2923b3f9.0", {st_mode=S_IFLNK|0777, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5f15c80c.0", {st_mode=S_IFLNK|0777, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GlobalSign_Root_CA_-_R6.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SZAFIR_ROOT_CA2.pem", {st_mode=S_IFLNK|0777, st_size=54, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Chambers_of_Commerce_Root_-_2008.pem", {st_mode=S_IFLNK|0777, st_size=71, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "40547a79.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "2e4eed3c.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GeoTrust_Primary_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=79, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "706f604c.0", {st_mode=S_IFLNK|0777, st_size=24, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SSL.com_EV_Root_Certification_Authority_RSA_R2.pem", {st_mode=S_IFLNK|0777, st_size=85, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "18856ac4.0", {st_mode=S_IFLNK|0777, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Buypass_Class_3_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_Global_Root_G3.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "f51bb24c.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "E-Tugra_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=70, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ef954a4e.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.pem", {st_mode=S_IFLNK|0777, st_size=99, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "USERTrust_RSA_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=76, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "b727005e.0", {st_mode=S_IFLNK|0777, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "3bde41ac.0", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1e09d511.0", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Staat_der_Nederlanden_EV_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=71, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "02265526.0", {st_mode=S_IFLNK|0777, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "080911ac.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "USERTrust_ECC_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=76, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_High_Assurance_EV_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=73, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.pem", {st_mode=S_IFLNK|0777, st_size=99, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "CA_Disig_Root_R2.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem", {st_mode=S_IFLNK|0777, st_size=94, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Buypass_Class_2_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "TeliaSonera_Root_CA_v1.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5cd81ad7.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "eed8c118.0", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5a4d6896.0", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_Assured_ID_Root_G2.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "f30dd6ad.0", {st_mode=S_IFLNK|0777, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "certSIGN_ROOT_CA.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "6fa5da56.0", {st_mode=S_IFLNK|0777, st_size=44, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "D-TRUST_Root_Class_3_CA_2_2009.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "b7a5b843.0", {st_mode=S_IFLNK|0777, st_size=37, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "thawte_Primary_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_Assured_ID_Root_G3.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Hongkong_Post_Root_CA_3.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1001acf7.0", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "8867006a.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SecureTrust_CA.pem", {st_mode=S_IFLNK|0777, st_size=53, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "4304c5e5.0", {st_mode=S_IFLNK|0777, st_size=43, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "fe8a2cd8.0", {st_mode=S_IFLNK|0777, st_size=19, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "3513523f.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "09789157.0", {st_mode=S_IFLNK|0777, st_size=54, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_Trusted_Root_G4.pem", {st_mode=S_IFLNK|0777, st_size=63, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "7d0b38bd.0", {st_mode=S_IFLNK|0777, st_size=64, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "32888f65.0", {st_mode=S_IFLNK|0777, st_size=59, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "QuoVadis_Root_CA_3.pem", {st_mode=S_IFLNK|0777, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GlobalSign_Root_CA_-_R3.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Entrust_Root_Certification_Authority_-_EC1.pem", {st_mode=S_IFLNK|0777, st_size=81, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "OISTE_WISeKey_Global_Root_GC_CA.pem", {st_mode=S_IFLNK|0777, st_size=70, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "c0ff1f52.0", {st_mode=S_IFLNK|0777, st_size=64, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GlobalSign_ECC_Root_CA_-_R5.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "a3418fda.0", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "68dd7389.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "3e45d192.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ff34af3f.0", {st_mode=S_IFLNK|0777, st_size=49, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "7f3d5d1d.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "7719f463.0", {st_mode=S_IFLNK|0777, st_size=63, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "f39fc864.0", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SwissSign_Gold_CA_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "OISTE_WISeKey_Global_Root_GB_CA.pem", {st_mode=S_IFLNK|0777, st_size=70, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "116bf586.0", {st_mode=S_IFLNK|0777, st_size=49, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "d853d49e.0", {st_mode=S_IFLNK|0777, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Starfield_Class_2_CA.pem", {st_mode=S_IFLNK|0777, st_size=59, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "8160b96c.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "6d41d539.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem", {st_mode=S_IFLNK|0777, st_size=98, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Hongkong_Post_Root_CA_1.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "2ae6433e.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "626dceaf.0", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "0c4c9b6c.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "d6325660.0", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "QuoVadis_Root_CA_2_G3.pem", {st_mode=S_IFLNK|0777, st_size=60, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GlobalSign_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SSL.com_Root_Certification_Authority_ECC.pem", {st_mode=S_IFLNK|0777, st_size=79, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "LuxTrust_Global_Root_2.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ISRG_Root_X1.pem", {st_mode=S_IFLNK|0777, st_size=51, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "c28a8a30.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "NetLock_Arany_=Class_Gold=_F\305\221tan\303\272s\303\255tv\303\241ny.pem", {st_mode=S_IFLNK|0777, st_size=83, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "QuoVadis_Root_CA_3_G3.pem", {st_mode=S_IFLNK|0777, st_size=60, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "b1b8a7f3.0", {st_mode=S_IFLNK|0777, st_size=35, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "b0e59380.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5c44d531.0", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1d3472b9.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "de6d66f3.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "c089bbbd.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Baltimore_CyberTrust_Root.pem", {st_mode=S_IFLNK|0777, st_size=64, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "4f316efb.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5273a94c.0", {st_mode=S_IFLNK|0777, st_size=35, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "cbf06781.0", {st_mode=S_IFLNK|0777, st_size=44, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "c01eb047.0", {st_mode=S_IFLNK|0777, st_size=22, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ba89ed3b.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "0f6fa695.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "CFCA_EV_ROOT.pem", {st_mode=S_IFLNK|0777, st_size=51, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Amazon_Root_CA_1.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem", {st_mode=S_IFLNK|0777, st_size=99, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "d7e8dc79.0", {st_mode=S_IFLNK|0777, st_size=22, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "773e07ad.0", {st_mode=S_IFLNK|0777, st_size=35, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "QuoVadis_Root_CA_2.pem", {st_mode=S_IFLNK|0777, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "76faf6c0.0", {st_mode=S_IFLNK|0777, st_size=22, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "93bc0acc.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "14bc7599.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "EE_Certification_Centre_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=70, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "cc450945.0", {st_mode=S_IFLNK|0777, st_size=14, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "AffirmTrust_Premium.pem", {st_mode=S_IFLNK|0777, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "406c9bb1.0", {st_mode=S_IFLNK|0777, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "AC_RAIZ_FNMT-RCM.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Entrust_Root_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=75, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "TWCA_Root_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=72, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SecureSign_RootCA11.pem", {st_mode=S_IFLNK|0777, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Starfield_Root_Certificate_Authority_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=80, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "emSign_Root_CA_-_G1.pem", {st_mode=S_IFLNK|0777, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5d3033c5.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "T-TeleSec_GlobalRoot_Class_2.pem", {st_mode=S_IFLNK|0777, st_size=67, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5443e9e3.0", {st_mode=S_IFLNK|0777, st_size=32, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "8cb5ee0f.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "D-TRUST_Root_Class_3_CA_2_EV_2009.pem", {st_mode=S_IFLNK|0777, st_size=72, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SSL.com_EV_Root_Certification_Authority_ECC.pem", {st_mode=S_IFLNK|0777, st_size=82, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Starfield_Services_Root_Certificate_Authority_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=89, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1e08bfd1.0", {st_mode=S_IFLNK|0777, st_size=37, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "e8de2f56.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "2e5ac55d.0", {st_mode=S_IFLNK|0777, st_size=18, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "d4dae3dd.0", {st_mode=S_IFLNK|0777, st_size=37, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SwissSign_Silver_CA_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=63, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Sonera_Class_2_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GeoTrust_Primary_Certification_Authority_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=84, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5ad8a5d6.0", {st_mode=S_IFLNK|0777, st_size=22, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ce5e74ef.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "4042bcee.0", {st_mode=S_IFLNK|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Izenpe.com.pem", {st_mode=S_IFLNK|0777, st_size=49, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GeoTrust_Universal_CA_2.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GeoTrust_Universal_CA.pem", {st_mode=S_IFLNK|0777, st_size=60, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "fc5a8f99.0", {st_mode=S_IFLNK|0777, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ePKI_Root_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=72, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "6b99d060.0", {st_mode=S_IFLNK|0777, st_size=40, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "4a6481c9.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Hellenic_Academic_and_Research_Institutions_RootCA_2011.pem", {st_mode=S_IFLNK|0777, st_size=94, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "349f2832.0", {st_mode=S_IFLNK|0777, st_size=10, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "TWCA_Global_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "54657681.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "9c2e7d30.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "749e9e03.0", {st_mode=S_IFLNK|0777, st_size=25, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "SSL.com_Root_Certification_Authority_RSA.pem", {st_mode=S_IFLNK|0777, st_size=79, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Security_Communication_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "0b1b94ef.0", {st_mode=S_IFLNK|0777, st_size=16, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "75d1b2ed.0", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "UCA_Extended_Validation_Root.pem", {st_mode=S_IFLNK|0777, st_size=67, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "244b5494.0", {st_mode=S_IFLNK|0777, st_size=38, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "48bec511.0", {st_mode=S_IFLNK|0777, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "QuoVadis_Root_CA_1_G3.pem", {st_mode=S_IFLNK|0777, st_size=60, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DST_Root_CA_X3.pem", {st_mode=S_IFLNK|0777, st_size=53, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "03179a64.0", {st_mode=S_IFLNK|0777, st_size=36, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Amazon_Root_CA_4.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "062cdee6.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "cd58d51e.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ad088e1d.0", {st_mode=S_IFLNK|0777, st_size=25, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Go_Daddy_Class_2_CA.pem", {st_mode=S_IFLNK|0777, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Comodo_AAA_Services_root.pem", {st_mode=S_IFLNK|0777, st_size=63, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "thawte_Primary_Root_CA_-_G3.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "e73d606e.0", {st_mode=S_IFLNK|0777, st_size=35, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "0bf05006.0", {st_mode=S_IFLNK|0777, st_size=44, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "e113c810.0", {st_mode=S_IFLNK|0777, st_size=12, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "128805a3.0", {st_mode=S_IFLNK|0777, st_size=35, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "064e0aa9.0", {st_mode=S_IFLNK|0777, st_size=25, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Entrust_Root_Certification_Authority_-_G4.pem", {st_mode=S_IFLNK|0777, st_size=80, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "653b494a.0", {st_mode=S_IFLNK|0777, st_size=29, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Certigna.pem", {st_mode=S_IFLNK|0777, st_size=47, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "aee5f10d.0", {st_mode=S_IFLNK|0777, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Taiwan_GRCA.pem", {st_mode=S_IFLNK|0777, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "f3377b1b.0", {st_mode=S_IFLNK|0777, st_size=34, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem", {st_mode=S_IFLNK|0777, st_size=96, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "emSign_ECC_Root_CA_-_G3.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "AffirmTrust_Commercial.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "988a38cb.0", {st_mode=S_IFLNK|0777, st_size=48, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Global_Chambersign_Root_-_2008.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ACCVRAIZ1.pem", {st_mode=S_IFLNK|0777, st_size=48, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GeoTrust_Global_CA.pem", {st_mode=S_IFLNK|0777, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "VeriSign_Universal_Root_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=86, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "1636090b.0", {st_mode=S_IFLNK|0777, st_size=59, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "6410666e.0", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "b66938e9.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "06dc52d5.0", {st_mode=S_IFLNK|0777, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "480720ec.0", {st_mode=S_IFLNK|0777, st_size=44, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "thawte_Primary_Root_CA_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "c47d9980.0", {st_mode=S_IFLNK|0777, st_size=36, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "3e44d2f7.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Staat_der_Nederlanden_Root_CA_-_G3.pem", {st_mode=S_IFLNK|0777, st_size=73, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Microsec_e-Szigno_Root_CA_2009.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Atos_TrustedRoot_2011.pem", {st_mode=S_IFLNK|0777, st_size=60, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Entrust.net_Premium_2048_Secure_Server_CA.pem", {st_mode=S_IFLNK|0777, st_size=80, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "COMODO_ECC_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=73, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "TrustCor_RootCert_CA-1.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "AffirmTrust_Premium_ECC.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "8d86cdd1.0", {st_mode=S_IFLNK|0777, st_size=20, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "607986c7.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "f387163d.0", {st_mode=S_IFLNK|0777, st_size=24, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Amazon_Root_CA_3.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "TrustCor_RootCert_CA-2.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ee64a828.0", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "2b349938.0", {st_mode=S_IFLNK|0777, st_size=26, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "a94d09e5.0", {st_mode=S_IFLNK|0777, st_size=13, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "9d04f354.0", {st_mode=S_IFLNK|0777, st_size=31, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "QuoVadis_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "emSign_ECC_Root_CA_-_C3.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "emSign_Root_CA_-_C1.pem", {st_mode=S_IFLNK|0777, st_size=58, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Cybertrust_Global_Root.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "dd8e9d41.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GTS_Root_R2.pem", {st_mode=S_IFLNK|0777, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "IdenTrust_Public_Sector_Root_CA_1.pem", {st_mode=S_IFLNK|0777, st_size=72, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GlobalSign_ECC_Root_CA_-_R4.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "dc4d6a89.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "UCA_Global_G2_Root.pem", {st_mode=S_IFLNK|0777, st_size=57, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_Global_Root_G2.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_Assured_ID_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "4bfab552.0", {st_mode=S_IFLNK|0777, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "0a775a30.0", {st_mode=S_IFLNK|0777, st_size=15, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "57bcb2da.0", {st_mode=S_IFLNK|0777, st_size=28, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem", {st_mode=S_IFLNK|0777, st_size=84, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Staat_der_Nederlanden_Root_CA_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=73, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "T-TeleSec_GlobalRoot_Class_3.pem", {st_mode=S_IFLNK|0777, st_size=67, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "AffirmTrust_Networking.pem", {st_mode=S_IFLNK|0777, st_size=61, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "EC-ACC.pem", {st_mode=S_IFLNK|0777, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "COMODO_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=69, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "ca-certificates.crt", {st_mode=S_IFREG|0644, st_size=213920, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Entrust_Root_Certification_Authority_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=80, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GTS_Root_R4.pem", {st_mode=S_IFLNK|0777, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Go_Daddy_Root_Certificate_Authority_-_G2.pem", {st_mode=S_IFLNK|0777, st_size=79, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "COMODO_RSA_Certification_Authority.pem", {st_mode=S_IFLNK|0777, st_size=73, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "5e98733a.0", {st_mode=S_IFLNK|0777, st_size=45, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Secure_Global_CA.pem", {st_mode=S_IFLNK|0777, st_size=55, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "4b718d9b.0", {st_mode=S_IFLNK|0777, st_size=27, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GeoTrust_Primary_Certification_Authority_-_G3.pem", {st_mode=S_IFLNK|0777, st_size=84, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "GlobalSign_Root_CA_-_R2.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "f0c70a8d.0", {st_mode=S_IFLNK|0777, st_size=47, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Certum_Trusted_Network_CA.pem", {st_mode=S_IFLNK|0777, st_size=64, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "106f3e4d.0", {st_mode=S_IFLNK|0777, st_size=46, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "c01cdfa2.0", {st_mode=S_IFLNK|0777, st_size=51, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "f081611a.0", {st_mode=S_IFLNK|0777, st_size=23, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "e2799e36.0", {st_mode=S_IFLNK|0777, st_size=49, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Network_Solutions_Certificate_Authority.pem", {st_mode=S_IFLNK|0777, st_size=78, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "DigiCert_Global_Root_CA.pem", {st_mode=S_IFLNK|0777, st_size=62, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "Certum_Trusted_Network_CA_2.pem", {st_mode=S_IFLNK|0777, st_size=66, ...}, AT_SYMLINK_NOFOLLOW) = 0
+brk(0x55deb0497000)                     = 0x55deb0497000
+close(6)                                = 0
+write(1, "640\t/etc/ssl/certs\n", 19640	/etc/ssl/certs
+)   = 19
+newfstatat(5, "private", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "private", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = -1 EACCES (Permission denied)
+write(2, "du: ", 4du: )                     = 4
+write(2, "cannot read directory '/etc/ssl/"..., 40cannot read directory '/etc/ssl/private') = 40
+write(2, ": Permission denied", 19: Permission denied)     = 19
+write(2, "\n", 1
+)                       = 1
+write(1, "4\t/etc/ssl/private\n", 194	/etc/ssl/private
+)   = 19
+newfstatat(5, "openssl.cnf", {st_mode=S_IFREG|0644, st_size=11118, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "660\t/etc/ssl\n", 13660	/etc/ssl
+)         = 13
+newfstatat(3, "python2.7", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "python2.7", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "python2.7", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/python2.7\n", 178	/etc/python2.7
+)     = 17
+newfstatat(3, "X11", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "X11", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "X11", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 9 entries */, 32768)   = 280
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "Xresources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "Xresources", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "Xresources", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "x11-common", {st_mode=S_IFREG|0644, st_size=319, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/X11/Xresources\n", 228	/etc/X11/Xresources
+) = 22
+newfstatat(5, "Xreset.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "Xreset.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "Xreset.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "README", {st_mode=S_IFREG|0644, st_size=205, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/X11/Xreset.d\n", 208	/etc/X11/Xreset.d
+)  = 20
+newfstatat(5, "Xsession", {st_mode=S_IFREG|0755, st_size=3517, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "Xsession.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "Xsession.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "Xsession.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 10 entries */, 32768)  = 416
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "20x11-common_process-args", {st_mode=S_IFREG|0644, st_size=2024, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "90x11-common_ssh-agent", {st_mode=S_IFREG|0644, st_size=629, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "90gpg-agent", {st_mode=S_IFREG|0644, st_size=880, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "99x11-common_start", {st_mode=S_IFREG|0644, st_size=166, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "30x11-common_xresources", {st_mode=S_IFREG|0644, st_size=878, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "35x11-common_xhost-local", {st_mode=S_IFREG|0644, st_size=389, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "40x11-common_xsessionrc", {st_mode=S_IFREG|0644, st_size=187, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "50x11-common_determine-startup", {st_mode=S_IFREG|0644, st_size=1568, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "36\t/etc/X11/Xsession.d\n", 2336	/etc/X11/Xsession.d
+) = 23
+newfstatat(5, "rgb.txt", {st_mode=S_IFREG|0644, st_size=17394, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "Xreset", {st_mode=S_IFREG|0755, st_size=709, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(5, "Xsession.options", {st_mode=S_IFREG|0644, st_size=265, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "88\t/etc/X11\n", 1288	/etc/X11
+)          = 12
+newfstatat(3, "bash_completion.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "bash_completion.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "bash_completion.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "git-prompt", {st_mode=S_IFREG|0644, st_size=439, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/bash_completion.d\n", 258	/etc/bash_completion.d
+) = 25
+newfstatat(3, "pulse", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "pulse", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "pulse", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 120
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "client.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "client.conf.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "client.conf.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 96
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "00-disable-autospawn.conf", {st_mode=S_IFREG|0644, st_size=116, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/pulse/client.conf.d\n", 278	/etc/pulse/client.conf.d
+) = 27
+newfstatat(5, "client.conf", {st_mode=S_IFREG|0644, st_size=1201, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "16\t/etc/pulse\n", 1416	/etc/pulse
+)        = 14
+newfstatat(3, "inputrc", {st_mode=S_IFREG|0644, st_size=1748, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "sensors3.conf", {st_mode=S_IFREG|0644, st_size=10593, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "ca-certificates.conf", {st_mode=S_IFREG|0644, st_size=5989, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "tmpfiles.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "tmpfiles.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "tmpfiles.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(5)                                = 0
+write(1, "4\t/etc/tmpfiles.d\n", 184	/etc/tmpfiles.d
+)    = 18
+newfstatat(3, "dhcp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "dhcp", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "dhcp", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 96
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "dhclient-exit-hooks.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "dhclient-exit-hooks.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "dhclient-exit-hooks.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "timesyncd", {st_mode=S_IFREG|0644, st_size=1117, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "8\t/etc/dhcp/dhclient-exit-hooks."..., 348	/etc/dhcp/dhclient-exit-hooks.d
+) = 34
+close(5)                                = 0
+write(1, "12\t/etc/dhcp\n", 1312	/etc/dhcp
+)         = 13
+newfstatat(3, "ucf.conf", {st_mode=S_IFREG|0644, st_size=1260, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "dbus-1", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "dbus-1", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "dbus-1", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 4 entries */, 32768)   = 112
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "session.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "session.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "session.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/dbus-1/session.d\n", 244	/etc/dbus-1/session.d
+) = 24
+newfstatat(5, "system.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "system.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "system.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 2 entries */, 32768)   = 48
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+close(6)                                = 0
+write(1, "4\t/etc/dbus-1/system.d\n", 234	/etc/dbus-1/system.d
+) = 23
+close(5)                                = 0
+write(1, "12\t/etc/dbus-1\n", 1512	/etc/dbus-1
+)       = 15
+newfstatat(3, "hosts.deny", {st_mode=S_IFREG|0644, st_size=711, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "logcheck", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "logcheck", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "logcheck", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "ignore.d.server", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(5, "ignore.d.server", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(5, "ignore.d.server", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 6
+getdents64(4, /* 4 entries */, 32768)   = 120
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(6, "gpg-agent", {st_mode=S_IFREG|0644, st_size=1305, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(6, "libsasl2-modules", {st_mode=S_IFREG|0644, st_size=79, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(6)                                = 0
+write(1, "12\t/etc/logcheck/ignore.d.server"..., 3312	/etc/logcheck/ignore.d.server
+) = 33
+close(5)                                = 0
+write(1, "16\t/etc/logcheck\n", 1716	/etc/logcheck
+)     = 17
+newfstatat(3, "rpc", {st_mode=S_IFREG|0644, st_size=887, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "vim", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "vim", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "vim", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "vimrc", {st_mode=S_IFREG|0644, st_size=2389, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/vim\n", 118	/etc/vim
+)           = 11
+newfstatat(3, "sysctl.conf", {st_mode=S_IFREG|0644, st_size=2351, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "modules-load.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "modules-load.d", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "modules-load.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 80
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "modules.conf", {st_mode=S_IFLNK|0777, st_size=10, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "4\t/etc/modules-load.d\n", 224	/etc/modules-load.d
+) = 22
+newfstatat(3, "mailcap.order", {st_mode=S_IFREG|0644, st_size=449, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(3, "python3.7", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(3, "python3.7", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+fcntl(4, F_GETFL)                       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "python3.7", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+fcntl(4, F_DUPFD_CLOEXEC, 3)            = 5
+getdents64(4, /* 3 entries */, 32768)   = 88
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+newfstatat(5, "sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}, AT_SYMLINK_NOFOLLOW) = 0
+close(5)                                = 0
+write(1, "8\t/etc/python3.7\n", 178	/etc/python3.7
+)     = 17
+newfstatat(3, "mime.types", {st_mode=S_IFREG|0644, st_size=24512, ...}, AT_SYMLINK_NOFOLLOW) = 0
+brk(0x55deb0494000)                     = 0x55deb0494000
+close(3)                                = 0
+write(1, "4068\t/etc\n", 104068	/etc
+)            = 10
+close(1)                                = 0
+close(2)                                = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
