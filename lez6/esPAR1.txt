@@ -1,0 +1,141 @@
+=======================================
+ISTRUZIONI GENERALI:
+=======================================
+
+
+Per accedere al server d'esame:
+UTILIZZARE IL FOGLIO CREDENZIALI PRESENTE SULLA POSTAZIONE. 
+- prima riga:	comando da inserire in bash per fare login
+- seconda riga:	password da utilizzare durante il login
+
+
+Nel server d'esame potrete: utilizzare comandi aggiuntivi per ottenere informazioni utili alla soluzione di domanda 1 e per scrivere e testare la soluzione da sottomettere per domanda 2. 
+
+ATTENZIONE: se lasciate il server inattivo dopo un po' va in freeze ... In tal
+caso chiudete il terminale, aprite un altro terminale e rieffettuate il login.
+
+
+=========================================
+   SysopLab - parziale 1 - DOMANDA 1:
+=========================================
+
+
+Dati i seguenti file :
+
+--------------------------------------------------------
+functions.asm ------------------------------------------
+--------------------------------------------------------
+
+;------------------------------------------
+; int slen(String message)
+; String length calculation function
+slen:
+    push    ebx
+    mov     ebx, eax
+ 
+nextchar:
+    cmp     byte [eax], 0
+    jz      finished
+    inc     eax
+    jmp     nextchar
+ 
+finished:
+    sub     eax, ebx
+    pop     ebx
+    ret
+ 
+;------------------------------------------
+; void sprint(String message)
+; String printing function
+sprint:
+    push    edx
+    push    ecx
+    push    ebx
+    push    eax
+    call    slen
+ 
+    mov     edx, eax
+    pop     eax
+ 
+    mov     ecx, eax
+    mov     ebx, 1
+    mov     eax, 4
+    int     80h
+ 
+    pop     ebx
+    pop     ecx
+    pop     edx
+    ret
+ 
+ 
+;------------------------------------------
+; void exit()
+; Exit program and restore resources
+quit:
+    mov     ebx, 0
+    mov     eax, 1
+    int     80h
+    ret
+
+
+----------------------------------------------------------
+test.asm -------------------------------------------------
+----------------------------------------------------------
+ 
+1  %include        'functions.asm'
+2  
+3  SECTION .data
+4  aMsg        db      'This is message a', 0h    
+5  bMsg        db      'This is message b', 0h    
+6  
+7  SECTION .text
+8  global  _start
+9  
+10 _start:
+11
+12 mov     eax, 2       ; carico in eax la syscall della fork (id 2)          
+13 int     80h
+14
+15 cmp     eax, 0       ; confronto il contenuto di eax con 0, se è 0 => ZF = 1     
+16 jz      a            ; se ho come risultato del confronto 0, quindi ZF = 1, salto all'etichetta a
+17
+18 b:                
+19 mov     eax, bMsg      
+20 call    sprint        
+21
+22 call    quit            
+23  
+24 a:                
+25 mov     eax, aMsg    ; carico nel registro eax l'indirizzo di memoria della label aMsg, che è una stringa 
+26 call    sprint       ; chiamata alla funzione "string" contenuta in functions.asm, funzione che stampa una stringa
+27  
+28  call    quit        ; chiamata alla funzione "quit" contenuta in functions.asm, funzione che esce dal programma e ripristina i registri
+29  
+----------------------------------------------------------
+
+Rispondere alle seguenti domande riguardanti test.asm (non modificate gli
+altri file), commentando le righe corrispondenti ed iniziando il commento
+con un ;
+
+
+a) Cosa stiamo caricando in eax a riga 12 di test.asm ?
+fatto
+b) Commentate le righe 15 e 16 di test.asm
+fatto
+c) Commentate le righe da 25 a 28 (incluse) di test.asm
+fatto
+
+
+Esempio di pipeline utile per ottenere conferma di codici syscall:
+printf SYS_read | gcc -include sys/syscall.h -m32 -E - | grep -v '#' | grep -v -e '^$'
+
+
+========================================
+   SysopLab - parziale 1 - DOMANDA 2 :
+========================================
+
+
+Utilizzare strace (linux syscall tracer) per listare tutte le chiamate di sistema effettuate durante l'esecuzione del comando df -h , 
+il cui nome inizi con la lettera s ed il cui nome abbia, in terza posizione, una vocale. Ordinarle per frequenza di chiamata ed estrarre 
+la chiamata di sistema effettuata piu' frequentemente. Stampare in output 'n syscallname' dove n e' il numero di occorrenze della chiamata 
+a syscallname. Risolvete l'esercizio utilizzando una pipeline. *Non* utilizzate i seguenti parametri per strace: -c , -C

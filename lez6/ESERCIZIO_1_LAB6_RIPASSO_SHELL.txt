@@ -1,0 +1,39 @@
+Consegna esercizio shell:
+
+Utilizzare strace (linux syscall tracer) per listare tutte le chiamate di sistema effettuate durante 
+l'esecuzione del comando df -h , il cui nome inizi con la lettera SINGOLALETTERASCELTA 
+ed il cui nome abbia, in terza posizione, una vocale. Ordinarle per frequenza di chiamata 
+ed estrarre la chiamata di sistema effettuata piu' frequentemente. Stampare in output 'n syscallname' 
+dove n e' il numero di occorrenze della chiamata a syscallname. Risolvete l'esercizio utilizzando una pipeline. 
+*Non* utilizzate i seguenti parametri per strace: -c , -C
+
+strace df -h 2>&1 | grep '(' | cut -d '(' -f 1 | grep -E '^[SINGOLALETTERASCELTA].[aiuoe].*' | sort | uniq -c | sort -nr | head -n 1 | sed 's/^ *//g'
+
+24 stat			(se, come lettera scelta utilizzate s)
+1 write			(se, come lettera scelta utilizzate w)
+3 openat		(se, come lettera scelta utilizzate o)
+
+Cercate di capire, facendo particolare attenzione al blocco grep l'effetto della seguente forma della pipeline:
+
+strace df -h 2>&1 | grep '(' | cut -d '(' -f 1 | grep -E '^[^aiuoe].[aiuoe].*' | sort | uniq -c | sort -nr | head -n 1 | sed 's/^ *//g'
+
+output:
+24 stat
+
+Ma e' uguale (nonstante il medesimo output) alla pipeline:
+strace df -h 2>&1 | grep '(' | cut -d '(' -f 1 | grep -E '^[s].[aiuoe].*' | sort | uniq -c | sort -nr | head -n 1 | sed 's/^ *//g'
+
+
+Spiegazione blocchi pipeline:
+
+strace df -h 2>&1	strace comando_e_parametri 2>&1  esecuzione di strace. MOLTA attenzione a 2>&1 e' FUSIONE di STDERR+STDOUT
+grep '('		filtra (mantieni) le sole righe che contengono il carattere (
+cut -d '(' -f 1		assicurata la presenza di ( lo si usa come delimitatore per estrarre NOME della syscall
+grep -E '^[SINGOLALETTERASCELTA].[aiuoe].*'	grep -E (esteso)  : usa classi (gruppi) di caratteri tra [] . 
+e' singolo carattere * vuol dire un numero qualsiasi di qualsiasi carattere (anche sequenza caratteri diversi tra loro)
+
+sort | uniq -c | sort -nr	blocchi di conteggio (sempre 3, al centro unique -c)
+head -n 1		estrazione prima riga (conteggio piu' elevato dato -r in blocco sort precedente)
+sed 's/^ *//g'		rimozione caratteri spaziatori in parte iniziale output
+
+Da testare con diverse lettere al posto di SINGOLALETTERASCELTA (con s output atteso e' '24 stat'

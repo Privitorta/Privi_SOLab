@@ -1,0 +1,26 @@
+i) Compilazione ed esecuzione C -> assembly :
+
+gcc -g -Wa,-adhln -masm=intel -fverbose-asm sbrkincr.c > sbrkincr.s
+
+parametri:
+
+
+The -masm=intel option tell gcc to generate assembly code in intel format (instead of AT&T)
+The -adhln options are passed to the assembler since we prefixed it with -Wa. The -adhln options essentially ask the assembler to:
+	-enable assembly code listings -a
+	- omit debugging directives -d
+	- include C source code -h
+	- include assembly -l
+	- and omit other stuff -n
+
+ii) Compilazione ed esecuzione esempio assembly (NASM / intel) :
+
+nasm -f elf asmbrk.s
+ld asmbrk.o -o asmbrk
+
+
+INFO UTILI i (per syscall x86) :
+
+https://x86.syscall.sh/
+
+
