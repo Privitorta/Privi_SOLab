@@ -169,12 +169,3 @@ Scrivi una *pipeline* di soli 2 blocchi in grado di creare `x` file, ognuno di e
 ```bash
 seq 10 | xargs -I {} touch SysoplabShell2_{}.txt
 ```
-
-Analizzare lo storico dei comandi in modo da identificare il comando contenente la pipeline più lunga (senza `awk`).
-```bash
-history | sed -e's/^\s*//' | cut -d ' ' -f2
-```
-Alternativa del grande Ivan che però non si adatta molto bene
-```bash
-history | sed -e's/^\s*//' -e 's/ //' | cut -d ' ' -f2
-```
