@@ -107,7 +107,7 @@ tar -cvf <archive_name>.tar
 ```bash
 tar -tvf <archive_name>.tar
 ```
-**Estrarre(`x`) file da archiviop0po (extract)**:
+**Estrarre(`x`) file da archivio (extract)**:
 ```bash
 tar -xvf <archive_name>.tar
 ```
