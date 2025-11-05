@@ -91,7 +91,7 @@ Con `find /home -type f` troviamo tutti i file in un dato ramo e con `wc -l` pas
 ## Archivi
 Un archivio *archive* è un file di file, cioè un file che contiene i byte di diversi altri file e i relativi *metadati*. `ar` è l'archiviatore classico, generalmente usato per le librerie (`ar t/usr/lib/i86/libc.a`).
 > [!NOTE]
-> Prova a idente solo dopo aver determinato la posizione del file usate `ar`. Per vedere tutti i possibili parametri di `ar`, consulta manuale `man ar`.
+> Prova a identificare solo dopo aver determinato la posizione del file usate `ar`. Per vedere tutti i possibili parametri di `ar`, consulta manuale `man ar`.
 
 C'è anche `tar`, Tape archive, standard *POSIX* (`tar cvf archivio.tar lista_files`); gli archivi possono essere compressi con `compress` o più comunemente con `gzip` o `bzip2`, i file `.zip` sono archivi complessi.
 > [!WARNING]
