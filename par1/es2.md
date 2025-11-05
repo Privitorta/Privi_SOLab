@@ -3,10 +3,6 @@
 > [!IMPORTANT]
 > Runna `sudo -s` prima di provarli nell'ambiente di esercitazione dato.
 
-
-> [!WARNING]
-> `sed 's/^[ \t]*//'` serve a eliminare, come richiesto all'esame, eventuali spazi e tabulazioni che si formano naturalmente nel corso della concatenazione delle pipe.
-
 ## Esercizio 1
 
 ### Obiettivo
@@ -16,6 +12,9 @@ Costruire una pipeline che, nel ramo /usr/include, individui il file di intestaz
 ```bash
 find /usr/include -type f -name '*.h' -print0 | xargs -0 grep -E '^[[:space:]]*//|/\*.*\*/' -H | cut -d':' -f1 | sort | uniq -c | sort -nr | head -1 | sed 's/^[ \t]*//'
 ```
+
+> [!NOTE]
+> `sed 's/^[ \t]*//'` serve a eliminare, come richiesto all'esame, eventuali spazi e tabulazioni che si formano naturalmente nel corso della concatenazione delle pipe. Sarà presente alla fine di ogni pipeline come comando di formattazione output.
 
 ## Esercizio 2
 
