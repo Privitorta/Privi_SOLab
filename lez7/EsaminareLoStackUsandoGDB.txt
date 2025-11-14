@@ -1,0 +1,117 @@
+1) Creare il seguente file (try1.c) :
+
+--------------------------
+#include<stdio.h>
+static void display(int i, int *ptr);
+
+int main(void) {
+        int x = 5;
+        int *xptr = &x;
+        printf("In main():\n");
+        printf(" x is %d and is stored at %p.\n", x, &x);
+        printf(" xptr points to %p which holds %d.\n", xptr, *xptr);
+        display(x, xptr);
+        return 0;
+}
+
+void display(int z, int *zptr) {
+        printf("In display():\n");
+        printf(" z is %d and is stored at %p.\n", z, &z);
+        printf(" zptr points to %p which holds %d.\n", zptr, *zptr);
+}
+--------------------------
+
+2) compilarlo (con simboli di debug):
+
+gcc -g try1.c -o try1
+
+3) eseguire try1 in GDB:
+gdb try1
+
+4) impostare un breakpoint in corrispondenza della riga 10 del sorgente:
+break 10
+
+NBB: GDB arresta l'esecuzione tra riga 9 e riga 10. Riga 9 e' gia' stata eseguita, riga 10 no.
+
+5) AL momento dell'impostazione del breakpoint GDB ha stampato l'indirizzo di memoria corrispondente a riga 10 (nel caso del mio test : 0x804848a ). Abbiamo, dopo aver impostato il breakpoint rieseguito il programma e ottenuto due righe di output. Ora siamo in main() in corrispondenza del codice riportato in riga 10 del sorgente (che non e' ancora stata eseguita).
+Esaminiamo lo stack utilizzando il comando backtrace di GDB ...
+
+backtrace 
+
+Otteniamo:
+#0  main () at try1.c:10
+
+Esiste quindi, al momento, un solo frame sullo stack (ha identificativo 0) ed esso appartiene a main()
+
+6) Eseguiamo UNA solo linea di codice. Questo causera' l'aggiunta di un altro frame sullo stack (verso il basso).
+step
+
+Otteniamo:
+display (z=5, zptr=0xbffffd18) at try1.c:15
+15		printf("In display():\n");
+
+7) Ispezioniamo di nuovo lo stack, sempre utilizzando il comando il comando backtrace):
+backtrace
+
+Otteniamo:
+#0  display (z=5, zptr=0xbffffd18) at try1.c:15
+#1  0x08048499 in main () at try1.c:10
+
+Ora abbiamo due frame sullo stack. frame 0 appartiene a display e frame 1 appartiene a main. Notiamo anche che main non ha argomenti ma display ha argomenti (e il VALORE di tali argomenti e' visibile). Tutti i frame mostrano la riga nel file dei sorgenti alla quale corrisponde l'esecuzione associata al frame. Il frame con numero piu' basso (lo 0) e' quello corrente.
+
+8) Eseguiamo due righe di codice (usiamo due volte il comando step):
+
+step
+step
+
+Otteniamo:
+
+(gdb) step
+In display():
+16		printf(" z is %d and is stored at %p.\n", z, &z);
+(gdb) step
+ z is 5 and is stored at 0xbffffd00.
+17		printf(" zptr points to %p which holds %d.\n", zptr, *zptr);
+
+Se controlliamo utilizzando backtrace notiamo che siamo sempre nel frame visto prima (quello associato alla funzione display identificato dall'identificativo 0):
+
+(gdb) backtrace
+#0  display (z=5, zptr=0xbffffd18) at try1.c:17
+#1  0x08048499 in main () at try1.c:10
+
+
+GDB, quindi, e' nel CONTESTO dell'attuale frame 0. Essere nel contesto di uno specifico frame significa che abbiamo accesso a tutte le variabili LOCALI al frame corrente (ma non alle variabili locali agli altri frame). Possiamo chiedere a GDB di dirci a quale frame corrisponde il contesto in cui ci troviamo correntemente utilizzando il comanfo frame:
+
+Otteniamo:
+
+(gdb) frame
+#0  display (z=5, zptr=0xbffffd18) at try1.c:17
+17		printf(" zptr points to %p which holds %d.\n", zptr, *zptr);
+
+
+9) Per cambiare il frame corrente (in modo da avere accesso alle variabili di un altro frame) possiamo utilizzare il comando 
+
+Proviamo a stampare variabili presenti in un frame diverso da quello corrente (ad esempio x e xptr):
+
+Otteniamo:
+(gdb) print x
+No symbol "x" in current context.
+(gdb) print xptr
+No symbol "xptr" in current context.
+
+Il motivo e' che x e xptr non sono in frame 0 ma in frame 1! Per avere accesso ad esse possiamo utilizzare il comando frame (seguito dal numro che identifica il frame a cui siamo interessati):
+
+
+(gdb) frame 1
+#1  0x08048499 in main () at try1.c:10
+10		display(x, xptr);
+
+Ora abbiamo accesso alle variabili locali a frame 1, come e' possibile verificare utilizzando i seguenti comandi:
+
+(gdb) print x
+$1 = 5
+(gdb) print xptr
+$2 = (int *) 0xbffffd18
+ 
+
+
